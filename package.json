@@ -1,0 +1,70 @@
+{
+  "_from": "github:tornadocash/websnark#966eafc47df639195c98374d3c366c32acd6f231",
+  "_id": "websnark@0.0.4",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/websnark",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "websnark@github:tornadocash/websnark#966eafc47df639195c98374d3c366c32acd6f231",
+    "name": "websnark",
+    "escapedName": "websnark",
+    "rawSpec": "github:tornadocash/websnark#966eafc47df639195c98374d3c366c32acd6f231",
+    "saveSpec": "github:tornadocash/websnark#966eafc47df639195c98374d3c366c32acd6f231",
+    "fetchSpec": null,
+    "gitCommittish": "966eafc47df639195c98374d3c366c32acd6f231"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "github:tornadocash/websnark#966eafc47df639195c98374d3c366c32acd6f231",
+  "_spec": "websnark@github:tornadocash/websnark#966eafc47df639195c98374d3c366c32acd6f231",
+  "_where": "/Users/ovdbigge/react/orbz",
+  "author": {
+    "name": "Jordi Baylina"
+  },
+  "bugs": {
+    "url": "https://github.com/iden3/websnark/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "big-integer": "^1.6.42"
+  },
+  "deprecated": false,
+  "description": "big integer library to work in Zq",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "eslint": "^5.14.0",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-webassembly": "^1.8.4",
+    "mocha": "^6.1.4",
+    "package": "^1.0.1",
+    "snarkjs": "^0.1.12",
+    "wasmbuilder": "0.0.3"
+  },
+  "homepage": "https://github.com/iden3/websnark#readme",
+  "keywords": [
+    "bigint",
+    "bignum",
+    "biginteger",
+    "zq",
+    "elliptic",
+    "curve",
+    "prime",
+    "field"
+  ],
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "name": "websnark",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iden3/websnark.git"
+  },
+  "scripts": {
+    "build": "node tools/buildwasm.js; browserify main.js -o build/websnark.js --exclude worker_threads --exclude crypto; cp build/websnark.js example/websnark.js",
+    "buildwasm": "node tools/buildwasm.js",
+    "test": "mocha --experimental-worker"
+  },
+  "version": "0.0.4"
+}
